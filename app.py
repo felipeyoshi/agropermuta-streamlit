@@ -72,5 +72,9 @@ if st.button('Simular'):
             unsafe_allow_html=True
         )
 
+        # Adiciona a pergunta de aprovação e abre a URL em outra aba
+        st.markdown(f'<a href="https://form.jotform.com/232605403546653" target="_blank">Clique aqui para aprovar a simulação</a>', unsafe_allow_html=True)
+
+    
     else:
         st.error(f'Error: {response.status_code}')
