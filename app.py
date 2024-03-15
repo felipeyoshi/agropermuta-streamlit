@@ -10,16 +10,16 @@ valor_bem = st.number_input('Valor', min_value=0.0, format='%f')
 if st.button('Simular'):
     # Call the API with all parameters
     data = {
-        "data_inicial": "2024-02-26",
+        "data_inicial": "2024-03-14",
         "valor_bem": valor_bem,
         "entrada": 0,
         "vencimento_primeira_parcela": "2024-10-30",
         "taxa_seguro": 0.03,
-        "custo_rastreador": 7000.00,
-        "capitalizacao_ano": 0.1050,
+        "custo_rastreador": 3500.00,
+        "capitalizacao_ano": 0.0975,
         "numero_parcelas": 6,
         "taxa_desagio": 0.0155,
-        "data_desconto": "2024-02-29"
+        "data_desconto": "2024-03-24"
     }
     
     response = requests.post('http://agropermuta.onrender.com/simulador', json=data)
