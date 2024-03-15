@@ -14,7 +14,6 @@ if st.button('Simular'):
         "valor_bem": valor_bem,
         "entrada": 0,
         "vencimento_primeira_parcela": "2024-10-30",
-        "vencimento_segunda_parcela": "2025-03-31",
         "taxa_seguro": 0.03,
         "custo_rastreador": 7000.00,
         "capitalizacao_ano": 0.1050,
