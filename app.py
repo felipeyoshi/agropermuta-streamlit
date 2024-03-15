@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import pandas as pd
+from datetime import date
 
 st.image('logo.jpg')
 
@@ -10,7 +11,7 @@ valor_bem = st.number_input('Valor', min_value=0.0, format='%f')
 if st.button('Simular'):
     # Call the API with all parameters
     data = {
-        "data_inicial": "2024-03-14",
+        "data_inicial": date.today().strftime("%Y-%m-%d"),
         "valor_bem": valor_bem,
         "entrada": 0,
         "vencimento_primeira_parcela": "2024-10-30",
